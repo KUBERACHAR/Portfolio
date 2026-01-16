@@ -45,12 +45,12 @@ body {
 
 .nav-container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0;
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 320px;
 }
 
 .logo {
@@ -86,6 +86,7 @@ body {
     gap: 5px;
     z-index: 1001;
     position: relative;
+    align-items: center;
 }
 
 .hamburger span {
@@ -534,6 +535,9 @@ figcaption {
     width: 100%;
     max-width: 90%;
     font-size: 0.9rem;
+  }
+  .nav-container{
+    gap: 100px;
   }
 }
 
