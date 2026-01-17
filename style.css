@@ -735,7 +735,7 @@ figcaption {
     justify-content: center;
     gap: 0.8rem;
     padding: 1rem;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(40, 189, 239, 0.956);
     border-radius: 10px;
     text-decoration: none;
     color: var(--white);
