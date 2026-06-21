@@ -62,6 +62,25 @@ var typed = new Typed('.typewriter-text', {
     loop: true,
 });
 
+window.addEventListener('load', () => {
+    const introOverlay = document.getElementById('intro-overlay');
+    if (!introOverlay) return;
+
+    document.body.style.overflow = 'hidden';
+    setTimeout(() => {
+        introOverlay.classList.add('intro-wipe');
+    }, 2200);
+
+    setTimeout(() => {
+        introOverlay.style.opacity = '0';
+        document.body.style.overflow = '';
+    }, 3200);
+
+    setTimeout(() => {
+        introOverlay.remove();
+    }, 3600);
+});
+
 // Modal section
 // Bus Tracking System Modal
 function openBus_tracking_system(){
