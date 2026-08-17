@@ -114,36 +114,44 @@ function closeEmployee_Tracker(){
     document.getElementById("myModal4").style.display="none";
 }
 
-// Bill Modal
-function openBill(){
+// Student Attendance Modal
+function openStudent_Tracker(){
     document.getElementById("myModal5").style.display="block";
 }
-function closeBill(){
+function closeStudent_Tracker(){
     document.getElementById("myModal5").style.display="none";
+}
+
+// Bill Modal
+function openBill(){
+    document.getElementById("myModal6").style.display="block";
+}
+function closeBill(){
+    document.getElementById("myModal6").style.display="none";
 }
 
 // Face Modal
 function openFace(){
-    document.getElementById("myModal6").style.display="block";
+    document.getElementById("myModal7").style.display="block";
 }
 function closeFace(){
-    document.getElementById("myModal6").style.display="none";
+    document.getElementById("myModal7").style.display="none";
 }
 
 // Tic Tac Toe Modal
 function openTic_tac_toe(){
-    document.getElementById("myModal7").style.display="block";
-}
-function closeTic_tac_toe(){
-    document.getElementById("myModal7").style.display="none";
-}
-
-// Tic Tac Toe Game Modal
-function openTic_tac_toe_game(){
     document.getElementById("myModal8").style.display="block";
 }
-function closeTic_tac_toe_game(){
+function closeTic_tac_toe(){
     document.getElementById("myModal8").style.display="none";
+}
+
+// Tic Tac Toe Play Game Modal
+function openTic_tac_toe_game(){
+    document.getElementById("myModal8_1").style.display="block";
+}
+function closeTic_tac_toe_game(){
+    document.getElementById("myModal8_1").style.display="none";
 }
 
 // Quiz Modal

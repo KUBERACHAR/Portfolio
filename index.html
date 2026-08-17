@@ -12,12 +12,13 @@
     <link rel="stylesheet" href="style.css">
     <title>KUBERACHAR A M</title>
 </head>
-<body oncontextmenu="return false";>
-    <div id="intro-overlay" class="intro-overlay">
+<!-- <body oncontextmenu="return false";> -->
+<body>
+    <!-- <div id="intro-overlay" class="intro-overlay">
         <div class="intro-content">
             <div class="intro-name">KUBERACHAR</div>
         </div>
-    </div>
+    </div> -->
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
@@ -247,6 +248,23 @@
                 <div class="project-card">
                     <div class="project-image">
                         <div class="project-placeholder">
+                            <img src="public/projects_assets/student-attendence-thumnail.png" alt="">
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Student Attendence Management System</h3>
+                        <p>A Student Attendance Management System is an software application designed to record, track, and analyze student attendance in real time.</p>
+                        <div class="project-link">
+                            <button class="modal-btn" onclick="openStudent_Tracker()">View more</button>
+                            <span><a href="https://attendance-03.vercel.app">View Application</a></span>
+                            <span><a href="https://github.com/KUBERACHAR/Attendance-3">Github link</a></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 6 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
                             <img src="public/projects_assets/bill-thumbnail.png" alt="">
                         </div>
                     </div>
@@ -263,7 +281,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Project 6 -->
+                <!-- Project 7 -->
                 <div class="project-card">
                     <div class="project-image">
                         <div class="project-placeholder">
@@ -278,7 +296,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Project 7 -->
+                <!-- Project 8 -->
                 <div class="project-card">
                     <div class="project-image">
                         <div class="project-placeholder">
@@ -294,7 +312,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Project 8 -->
+                <!-- Project 9 -->
                 <div class="project-card">
                     <div class="project-image">
                         <div class="project-placeholder">
@@ -310,7 +328,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Project 9 -->
+                <!-- Project 10 -->
                 <div class="project-card">
                     <div class="project-image">
                         <div class="project-placeholder">
@@ -478,8 +496,45 @@
         </div>
     </div>
 
-    <!-- Bill Modal -->
+    <!-- Student Attendance system Modal -->
     <div id="myModal5" class="modal">
+        <div class="modal-content">
+            <span onclick="closeStudent_Tracker()" class="close">&times;</span>
+            <p>Student Attendance Management System</p>
+            <div class="image-container">
+                <figure>
+                    <img src="public/projects_assets/student_attendance_admin.png" alt="">
+                    <figcaption>Admin Interface</figcaption>
+                </figure>
+                <figure>
+                    <img src="public/projects_assets/student_attendance_report.png" alt="">
+                    <figcaption>Student Interface</figcaption>
+                </figure>
+            </div>
+            <div class="project_description">
+                <h3>Student Attendance Management System</h3>
+                <p>A full-stack Student Attendance Management System designed to manage attendance recording, generate real-time analytics. The platform streamlines operations for teachers, administrators, and students through a unified web interface.</p>
+                <p>
+                    * Features: <br>
+                    - Web based landing page with respect to roles. <br>
+                    - Faculty and Class management by by Admin. <br>
+                    - Attendance marking by faculties. <br>
+                    - Real time updates in student interface.
+                </p>
+                <ul>
+                    <p>Technologies Used</p>
+                    <li>HTML5 <img class="skill-logo" src="public/skills_assets/html.png" alt=""></li>
+                    <li>CSS3 <img class="skill-logo" src="public/skills_assets/css.png" alt=""></li>
+                    <li>React <img class="skill-logo" src="public/skills_assets/react.png" alt=""></li>
+                    <li>Supabase <img class="skill-logo" src="public/skills_assets/supabase.png" alt=""></li>
+                    <li>Postgresql <img class="skill-logo" src="public/skills_assets/postgresql.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bill Modal -->
+    <div id="myModal6" class="modal">
         <div class="modal-content">
             <span onclick="closeBill()" class="close">&times;</span>
             <p>Clinic Billing Application</p>
@@ -511,7 +566,7 @@
     </div>
 
     <!-- Face Recognition Modal -->
-    <div id="myModal6" class="modal">
+    <div id="myModal7" class="modal">
         <div class="modal-content">
             <span onclick="closeFace()" class="close">&times;</span>
             <p>Face Recognition Model</p>
@@ -531,14 +586,14 @@
                     <li>HTML5 <img class="skill-logo" src="public/skills_assets/html.png" alt=""></li>
                     <li>CSS3 <img class="skill-logo" src="public/skills_assets/css.png" alt=""></li>
                     <li>Java Script <img class="skill-logo" src="public/skills_assets/js.png" alt=""></li>
-                    <li>TenseoFlow.js <img class="skill-logo" src="public/skills_assets/tf.js" alt=""></li>
+                    <li>TenseoFlow.js <img class="skill-logo" src="public/skills_assets/tensorflow.png" alt=""></li>
                 </ul>
             </div>
         </div>
     </div>
 
     <!-- Tic Tac Toe Modal -->
-    <div id="myModal7" class="modal">
+    <div id="myModal8" class="modal">
         <div class="modal-content">
             <span onclick="closeTic_tac_toe()" class="close">&times;</span>
             <p>Tic Tac Toe Game</p>
@@ -567,8 +622,8 @@
         </div>
     </div>
 
-    <!-- Tic Tac Toe Game Modal -->
-    <div id="myModal8" class="modal">
+    <!-- Tic Tac Toe Play Game Modal -->
+    <div id="myModal8_1" class="modal">
         <div class="modal-content" style="width: 600px;">
             <span onclick="closeTic_tac_toe_game()" class="close">&times;</span>
             <p>Tic Tac Toe Game</p>
