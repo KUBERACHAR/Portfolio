@@ -82,7 +82,7 @@ window.addEventListener('load', () => {
 });
 
 // Modal section
-// Bus Tracking System Modal
+// System Security Monitoring Modal
 function open_ssm(){
     document.getElementById("myModal1").style.display="block";
 }
