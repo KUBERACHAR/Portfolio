@@ -90,7 +90,7 @@ function close_ssm(){
     document.getElementById("myModal1").style.display="none";
 }
 
-// Bus Tracking System Modal
+// SPHEREx Modal
 function open_spherex_visualization(){
     document.getElementById("myModal2").style.display="block";
 }
