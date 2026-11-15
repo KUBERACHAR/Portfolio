@@ -83,94 +83,126 @@ window.addEventListener('load', () => {
 
 // Modal section
 // Bus Tracking System Modal
-function openBus_tracking_system(){
+function open_ssm(){
     document.getElementById("myModal1").style.display="block";
 }
-function closeBus_tracking_system(){
+function close_ssm(){
     document.getElementById("myModal1").style.display="none";
+}
+
+// // Bus Tracking System Modal
+// function openBus_tracking_system(){
+//     document.getElementById("myModal1").style.display="block";
+// }
+// function closeBus_tracking_system(){
+//     document.getElementById("myModal1").style.display="none";
+// }
+
+// // Bus Tracking System Modal
+// function openBus_tracking_system(){
+//     document.getElementById("myModal1").style.display="block";
+// }
+// function closeBus_tracking_system(){
+//     document.getElementById("myModal1").style.display="none";
+// }
+
+// // Bus Tracking System Modal
+// function openBus_tracking_system(){
+//     document.getElementById("myModal1").style.display="block";
+// }
+// function closeBus_tracking_system(){
+//     document.getElementById("myModal1").style.display="none";
+// }
+// ---------------------------------------------------
+// Bus Tracking System Modal
+function openBus_tracking_system(){
+    document.getElementById("myModal5").style.display="block";
+}
+function closeBus_tracking_system(){
+    document.getElementById("myModal5").style.display="none";
 }
 
 // MS UI Modal
 function openMS_UI(){
-    document.getElementById("myModal2").style.display="block";
+    document.getElementById("myModal6").style.display="block";
 }
 function closeMS_UI(){
-    document.getElementById("myModal2").style.display="none";
+    document.getElementById("myModal6").style.display="none";
 }
 
 // Gym Website Modal
 function openGym(){
-    document.getElementById("myModal3").style.display="block";
+    document.getElementById("myModal7").style.display="block";
 }
 function closeGym(){
-    document.getElementById("myModal3").style.display="none";
+    document.getElementById("myModal7").style.display="none";
 }
 
 // Employee Tracker Modal
 function openEmployee_Tracker(){
-    document.getElementById("myModal4").style.display="block";
+    document.getElementById("myModal8").style.display="block";
 }
 function closeEmployee_Tracker(){
-    document.getElementById("myModal4").style.display="none";
+    document.getElementById("myModal8").style.display="none";
 }
 
 // Student Attendance Modal
 function openStudent_Tracker(){
-    document.getElementById("myModal5").style.display="block";
+    document.getElementById("myModal9").style.display="block";
 }
 function closeStudent_Tracker(){
-    document.getElementById("myModal5").style.display="none";
+    document.getElementById("myModal9").style.display="none";
 }
 
 // Bill Modal
 function openBill(){
-    document.getElementById("myModal6").style.display="block";
+    document.getElementById("myModal10").style.display="block";
 }
 function closeBill(){
-    document.getElementById("myModal6").style.display="none";
+    document.getElementById("myModal10").style.display="none";
 }
 
 // Face Modal
 function openFace(){
-    document.getElementById("myModal7").style.display="block";
+    document.getElementById("myModal11").style.display="block";
 }
 function closeFace(){
-    document.getElementById("myModal7").style.display="none";
+    document.getElementById("myModal11").style.display="none";
 }
 
 // Tic Tac Toe Modal
 function openTic_tac_toe(){
-    document.getElementById("myModal8").style.display="block";
+    document.getElementById("myModal12").style.display="block";
 }
 function closeTic_tac_toe(){
-    document.getElementById("myModal8").style.display="none";
+    document.getElementById("myModal12").style.display="none";
 }
 
 // Tic Tac Toe Play Game Modal
 function openTic_tac_toe_game(){
-    document.getElementById("myModal8_1").style.display="block";
+    document.getElementById("myModal12_1").style.display="block";
 }
 function closeTic_tac_toe_game(){
-    document.getElementById("myModal8_1").style.display="none";
+    document.getElementById("myModal12_1").style.display="none";
 }
 
 // Quiz Modal
 function openQuiz(){
-    document.getElementById("myModal9").style.display="block";
+    document.getElementById("myModal13").style.display="block";
 }
 function closeQuiz(){
-    document.getElementById("myModal9").style.display="none";
+    document.getElementById("myModal13").style.display="none";
 }
 
 // Quiz Modal
 function openCalculator(){
-    document.getElementById("myModal10").style.display="block";
+    document.getElementById("myModal14").style.display="block";
 }
 function closeCalculator(){
-    document.getElementById("myModal10").style.display="none";
+    document.getElementById("myModal14").style.display="none";
 }
 
-// Cursor Trail Effect
+// Cursor Tail Effect
 document.addEventListener('DOMContentLoaded', function() {
   // Create canvas element
   const canvas = document.createElement('canvas');
