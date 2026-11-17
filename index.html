@@ -12,12 +12,12 @@
     <link rel="stylesheet" href="style.css">
     <title>KUBERACHAR A M</title>
 </head>
-<body oncontextmenu="return false";>
-    <div id="intro-overlay" class="intro-overlay">
+<body oncontextmenu="return true";>
+    <!-- <div id="intro-overlay" class="intro-overlay">
         <div class="intro-content">
             <div class="intro-name">KUBERACHAR</div>
         </div>
-    </div>
+    </div> -->
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
@@ -234,6 +234,7 @@
                         <p>A Streamlit software prototype that simulates water-quality sensor readings, evaluates them with threshold rules and a weighted Water Quality Index (WQI), and displays the results in a live dashboard.</p>
                         <div class="project-link">
                             <button class="modal-btn" onclick="open_water_quality_monitoring()">View more</button>
+                            <span><a href="https://water-quality-monitoring-app.streamlit.app/">View Website</a></span>
                             <span><a href="https://github.com/KUBERACHAR/Water-Quality-Monitoring">Github link</a></span>
                         </div>
                     </div>
@@ -529,7 +530,38 @@
         </div>
     </div>
     </div>
-<!---------------------------------------------------------------------------------->
+
+    <!-- Water Quality Monitoring -->
+    <div id="myModal4" class="modal">
+    <div class="modal-content">
+        <span onclick="close_water_quality_monitoring()" class="close">&times;</span>
+        <p>Water Quality Monitoring Application</p>
+        <div class="image-container">
+            <figure>
+                <img src="public/projects_assets/water-quality-1.png" alt="">
+                <figcaption>Monitoring Dashboard</figcaption>
+            </figure>
+            <figure>
+                <img src="public/projects_assets/water-quality-2.png" alt="">
+                <figcaption>Real time active alert</figcaption>
+            </figure>
+            <figure>
+                <img src="public/projects_assets/water-quality-3.png" alt="">
+                <figcaption>User input section</figcaption>
+            </figure>
+        </div>
+        <div class="project_description">
+            <h3>Water Quality Monitoring</h3>
+            <p>
+                A Streamlit software prototype that simulates water-quality sensor readings, evaluates them with threshold rules and a weighted Water Quality Index (WQI), and displays the results in a live dashboard.
+            </p>
+            <ul>
+                <p>Technologies Used</p>
+                <li>Python <img class="skill-logo" src="public/skills_assets/python.png" alt="" style="width: 40px;" height="40px"></li>
+            </ul>
+        </div>
+    </div>
+    </div>
     <!-- Bus Tracking System Modal -->
     <div id="myModal5" class="modal">
     <div class="modal-content">

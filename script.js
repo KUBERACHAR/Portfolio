@@ -98,7 +98,7 @@ function close_spherex_visualization(){
     document.getElementById("myModal2").style.display="none";
 }
 
-// Bus Tracking System Modal
+// ECHO Modal
 function open_echo(){
     document.getElementById("myModal3").style.display="block";
 }
@@ -106,14 +106,14 @@ function close_echo(){
     document.getElementById("myModal3").style.display="none";
 }
 
-// // Bus Tracking System Modal
-// function openBus_tracking_system(){
-//     document.getElementById("myModal1").style.display="block";
-// }
-// function closeBus_tracking_system(){
-//     document.getElementById("myModal1").style.display="none";
-// }
-// ---------------------------------------------------
+// Water Quality Monitoring Modal
+function open_water_quality_monitoring(){
+    document.getElementById("myModal4").style.display="block";
+}
+function closeBus_tracking_system(){
+    document.getElementById("myModal4").style.display="none";
+}
+
 // Bus Tracking System Modal
 function openBus_tracking_system(){
     document.getElementById("myModal5").style.display="block";
