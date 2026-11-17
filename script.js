@@ -98,13 +98,13 @@ function close_spherex_visualization(){
     document.getElementById("myModal2").style.display="none";
 }
 
-// // Bus Tracking System Modal
-// function openBus_tracking_system(){
-//     document.getElementById("myModal1").style.display="block";
-// }
-// function closeBus_tracking_system(){
-//     document.getElementById("myModal1").style.display="none";
-// }
+// Bus Tracking System Modal
+function open_echo(){
+    document.getElementById("myModal3").style.display="block";
+}
+function close_echo(){
+    document.getElementById("myModal3").style.display="none";
+}
 
 // // Bus Tracking System Modal
 // function openBus_tracking_system(){
