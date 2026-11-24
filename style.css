@@ -687,6 +687,9 @@ figcaption {
     text-align: center;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s;
+    .ceritificate_link{
+        text-decoration: none;
+    }
 }
 
 .certifications-card:hover {
