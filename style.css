@@ -674,42 +674,9 @@ figcaption {
 }
 
 /* certifications Section */
-.certifications-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-}
 
-.certifications-card {
-    background: var(--white);
-    padding: 2rem;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s;
-    .ceritificate_link{
-        text-decoration: none;
-    }
-}
 
-.certifications-card:hover {
-    transform: translateY(-5px);
-}
 
-.certifications-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.certifications-card h3 {
-    margin-bottom: 0.8rem;
-    color: var(--text-dark);
-}
-
-.certifications-card p {
-    color: var(--text-light);
-    font-size: 0.95rem;
-}
 
 /* Interests Section */
 .interests-section {
@@ -859,7 +826,7 @@ figcaption {
         font-size: 2rem;
     }
     
-    .projects-grid, .skills-grid, .certifications-grid {
+    .projects-grid, .skills-grid {
         grid-template-columns: 1fr;
     }
 }
