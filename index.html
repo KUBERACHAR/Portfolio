@@ -954,36 +954,96 @@
     </section>
 
     <!-- Certifications Section -->
-    <section id="certifications" class="certifications-section">
-        <div class="container">
-            <h2 class="section-title">Certifications</h2>
-            <div class="certifications-grid">
-                <div class="certifications-card">
-                    <!-- <div class="certifications-icon">🏆</div> --> 
-                    <h4>Certificate 1</h4>
-                    <p>Certified Google Cloud Career Launchpad Computing Foundations track</p>
-                    <a class="ceritificate_link" href="https://drive.google.com/file/d/1umLZeT5UqpIqGcOAdV8dm2-aS89Z7CrV/view?usp=sharing">Certificate link</a>
-                </div>
-                <div class="certifications-card">
-                    <!-- <div class="certifications-icon">⭐</div> -->
-                    <h4>Certificate 2</h4>
-                    <p>Certified in Big Data Foundations - Level 2</p>
-                    <a class="ceritificate_link" href="https://drive.google.com/file/d/1960JyIoOd-BM3MTQi6PBH4EuE1c06ASu/view?usp=sharing">Certificate link</a>
-                </div>
-                <div class="certifications-card">
-                    <!-- <div class="certifications-icon">📜</div> -->
-                    <h4>Certificate 3</h4>
-                    <p>Certificate of Participation in IBM Datathon</p>
-                    <a class="ceritificate_link" href="https://drive.google.com/file/d/1khHPdluuBL3B4rTEU-njn9ZUBC2Z_8Ty/view?usp=sharing">Certificate link</a>
-                </div>
-                <div class="certifications-card">
-                    <!-- <div class="certifications-icon">🎓</div> -->
-                    <h4>Certificate 4</h4>
-                    <p>Certificate of Participation in NASA Space Apps Challenge - 2026</p>
-                    <a class="ceritificate_link" href="https://drive.google.com/file/d/1EaL25MXtBdt0K6Ih_Aq0ywl7NZg1_iPj/view?usp=sharing">Certificate link</a>
-                </div>
+    <section id="certifications" class="cert-section" aria-labelledby="cert-heading">
+    <div class="cert-container">
+      <header class="cert-header">
+        <h2 id="cert-heading" class="cert-title">Certifications</h2>
+        <p class="cert-subtitle">Courses and credentials I've completed to sharpen my skills.</p>
+      </header>
+
+      <div class="cert-grid">
+        <article class="cert-card" data-link="">
+          <button class="cert-card__thumb" type="button">
+            <img src="/certificates/google_cloude.png" alt="Certificate" loading="lazy" />
+            <span class="cert-card__overlay">View Certificate</span>
+          </button>
+          <div class="cert-card__body">
+            <span class="cert-card__issuer">Certificate 1</span>
+            <h3 class="cert-card__title">Google Cloud</h3>
+            <p class="cert-card__desc">Certified Google Cloud Career Launchpad Computing Foundations track.</p>
+            <div class="cert-card__footer">
+              <span class="cert-card__date">April 2026</span>
+              <button class="cert-btn" type="button">View &#8594;</button>
             </div>
+          </div>
+        </article>
+        <article class="cert-card" data-link="">
+          <button class="cert-card__thumb" type="button">
+            <img src="/certificates/big_data.png" alt="Certificate" loading="lazy" />
+            <span class="cert-card__overlay">View Certificate</span>
+          </button>
+          <div class="cert-card__body">
+            <span class="cert-card__issuer">Certificate 2</span>
+            <h3 class="cert-card__title">IBM</h3>
+            <p class="cert-card__desc">Big Data Foundations - Level 2.</p>
+            <div class="cert-card__footer">
+              <span class="cert-card__date">Oct 2026</span>
+              <button class="cert-btn" type="button">View &#8594;</button>
+            </div>
+          </div>
+        </article>
+        <article class="cert-card" data-link="">
+          <button class="cert-card__thumb" type="button">
+            <img src="/certificates/IBM-datathon.jpeg" alt="Certificate" loading="lazy" />
+            <span class="cert-card__overlay">View Certificate</span>
+          </button>
+          <div class="cert-card__body">
+            <span class="cert-card__issuer">Certificate 3</span>
+            <h3 class="cert-card__title">IBM</h3>
+            <p class="cert-card__desc">IBM Datathon - 2025 Participation Certificate.</p>
+            <div class="cert-card__footer">
+              <span class="cert-card__date">Oct 2025</span>
+              <button class="cert-btn" type="button">View &#8594;</button>
+            </div>
+          </div>
+        </article>
+        <article class="cert-card" data-link="">
+          <button class="cert-card__thumb" type="button">
+            <img src="/certificates/nasa_space_apps__challenge.png" alt="Certificate" loading="lazy" />
+            <span class="cert-card__overlay">View Certificate</span>
+          </button>
+          <div class="cert-card__body">
+            <span class="cert-card__issuer">Certificate 4</span>
+            <h3 class="cert-card__title">NASA</h3>
+            <p class="cert-card__desc">NASA Space Apps Challenge - 2026 Participation Certificate.</p>
+            <div class="cert-card__footer">
+              <span class="cert-card__date">Nov 2026</span>
+              <button class="cert-btn" type="button">View &#8594;</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Viewer (lightbox) -->
+    <div class="cert-modal" id="certModal" aria-hidden="true">
+      <div class="cert-modal__backdrop" data-close></div>
+      <div class="cert-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="certModalTitle">
+        <button class="cert-modal__close" type="button" aria-label="Close" data-close>&times;</button>
+        <button class="cert-modal__nav cert-modal__nav--prev" type="button" aria-label="Previous certificate">&#8249;</button>
+        <button class="cert-modal__nav cert-modal__nav--next" type="button" aria-label="Next certificate">&#8250;</button>
+
+        <div class="cert-modal__media">
+          <img id="certModalImg" src="" alt="" />
         </div>
+        <div class="cert-modal__info">
+          <h3 id="certModalTitle"></h3>
+          <p class="cert-modal__meta" id="certModalMeta"></p>
+          <p class="cert-modal__desc" id="certModalDesc"></p>
+          <a class="cert-btn cert-btn--primary" id="certModalLink" href="#" target="_blank" rel="noopener">Verify credential &#8599;</a>
+        </div>
+      </div>
+    </div>
     </section>
 
     <!-- Interests & Goals Section -->
